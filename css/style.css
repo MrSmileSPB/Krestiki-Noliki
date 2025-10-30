@@ -1,0 +1,33 @@
+
+:root {
+  --color-one: rgb(255, 255, 255);
+  --color-two: rgb(127, 156, 170);
+}
+
+
+
+.game__container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.game__title {
+
+}
+.game__board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.game__item {
+    width: 100px;
+    height: 100px;
+}
+
+.game__start-modal-window {
+
+}
