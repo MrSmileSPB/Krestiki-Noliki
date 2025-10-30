@@ -24,6 +24,11 @@
 }
 
 .game__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
     width: 100px;
     height: 100px;
 }
