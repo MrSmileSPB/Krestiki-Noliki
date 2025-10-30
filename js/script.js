@@ -32,13 +32,15 @@ $(document).ready(function() {
     function makeMove(current_elem) { // Действие игрока
         if(game_active && current_elem.text().trim() === '') { // если игра активна и ячейка не занята, то
             current_elem.text(current_player); // ставим Х или 0 
-            current_player = (current_player === 'X') ? 'O' : 'X'; // переход хода
+            current_player = switchPlayer(current_player);
         } else {
             alert('Ячейка уже занята!');
         }
     }
 
-
+    function switchPlayer(current_player) { // Переход хода
+        return current_player = (current_player === 'X') ? 'O' : 'X'; 
+    }
    
 
     createGameBoard();
